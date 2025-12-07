@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:5500/index.html/portfolio.html#projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #0f172a;
+            color: white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+            background:#1e293b;
+            position:sticky;
+            top:0;
+        }
+
+        header h2{
+            font-size:26px;
+            color:#38bdf8;
+        }
+
+        nav a{
+            margin-left:20px;
+            color:#cbd5e1;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:white;
+        }
+
+        /* Hero Section */
+        .hero{
+            padding:80px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .hero-text{
+            max-width:500px;
+        }
+
+        .hero-text h1{
+            font-size:40px;
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        .hero-text p{
+            color:#cbd5e1;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background:#38bdf8;
+            color:#0f172a;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:5px;
+        }
+
+        /* About */
+        .about, .projects, .skills, .contact{
+            padding:60px 50px;
+        }
+
+        h2{
+            margin-bottom:20px;
+            font-size:30px;
+            color:#38bdf8;
+        }
+
+        .about p{
+            max-width:700px;
+            line-height:1.7;
+            color:#cbd5e1;
+        }
+
+        /* Projects */
+        .project-box{
+            background:#1e293b;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:8px;
+        }
+
+        .project-box h3{
+            margin-bottom:10px;
+            color:#38bdf8;
+        }
+
+        .project-box p{
+            color:#cbd5e1;
+        }
+
+        /* Skills */
+        .skill-box{
+            background:#1e293b;
+            padding:12px 20px;
+            margin:8px;
+            display:inline-block;
+            border-radius:6px;
+            color:#cbd5e1;
+        }
+
+        /* Contact */
+        .contact p{
+            color:#cbd5e1;
+            margin-bottom:10px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#1e293b;
+            color:#94a3b8;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1265.0" data-gr-ext-installed="">
+
+<header>
+    <h2>RUDRA PRATAP SINGH</h2>
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html/portfolio.html#about">About</a>
+        <a href="http://127.0.0.1:5500/index.html/portfolio.html#projects">Projects</a>
+        <a href="http://127.0.0.1:5500/index.html/portfolio.html#skills">Skills</a>
+        <a href="http://127.0.0.1:5500/index.html/portfolio.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm Rudra Pratap Singh</h1>
+        <p>I am a Web Developer &amp; CSE Student.</p>
+        <a class="btn" href="http://127.0.0.1:5500/index.html/portfolio.html#projects">View My Work</a>
+    </div>
+
+    <img src="./MY PORTFOLIO_files/rudra.jpg" width="300" height="200" style="border-radius:10px;">
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I’m a Computer Science student.
+    </p>
+</section>
+
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+        <h3>Portfolio Website</h3>
+        <p>Personal website built using HTML &amp; CSS.</p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">C Language</div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ar4166139@email.com</p>
+    <p>LinkedIn: linkedin.com/in/rudrapratapsingh</p>
+</section>
+
+<footer>
+    © 2025 Rudra Pratap Singh — All Rights Reserved
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
